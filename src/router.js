@@ -15,6 +15,11 @@ export default new Router({
             redirect: '/profile',
             component: () => import('@/components/layout/Layout'),
             children: [
+              {
+                path: "/",
+                name: "profile",
+                component: () => import("@/views/pages/Profile.vue"),
+              },
                 {
                     path: "/profile",
                     name: "profile",
